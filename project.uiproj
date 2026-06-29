@@ -1,0 +1,6 @@
+{
+  "Name": "Add new vendor details",
+  "ProjectType": "Process",
+  "Description": "Blank Process",
+  "MainFile": "Main.xaml"
+}
