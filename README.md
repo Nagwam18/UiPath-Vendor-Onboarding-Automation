@@ -97,8 +97,14 @@ Anchor:
 ✔ Clear Workflow Annotations (Pre/Post Conditions).
 
 ## Screenshots
-![Main Workflow](Screenshots/main_workflow.png)
-Add New Vendor Form
+![Main Workflow](ScreenShots/MainWorkflow.png)
+
+![Login To ACMES](ScreenShots/LoginToACMEWorkflow.png)
+
+![Navigate To AddVendor](ScreenShots/NavigateToAddVendor.png)
+
+![Add New Vendor Form](ScreenShots/AddNewVendor.png)
+
 Demo
 Simple link:
-Watch the demo (Google Drive)# UiPath-Vendor-Onboarding-Automation
+(Watch the demo)[https://drive.google.com/file/d/1XKOMGH5yfN8OKgY27tmwwyI4rxFn0nTS/view?usp=sharing]# UiPath-Vendor-Onboarding-Automation
