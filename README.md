@@ -22,7 +22,7 @@ This project automates the process of adding new vendor details into the ACME Sy
 - If Not Logged In: Log an error message and safely terminate/stop the process.
 - If Logged In: Navigate to Vendors > Add New Vendor section.
 -Input the following predefined vendor details into the web form:
-   - Vendor ID: "10001"
+   - Vendor ID: "10022"
    - Vendor Name: "Ironman Inc"
    - Vendor Address: "1 MG Road"
    - Vendor City: "Bengaluru"
@@ -52,26 +52,25 @@ This project automates the process of adding new vendor details into the ACME Sy
 - Configured the workflow to branch out: if logged in, it proceeds; if not, it triggers a clean error log instead of unhandled element-not-found exceptions.
 
 **Challenge 2: Ensuring Input Accuracy Across All Fields**
-When filling multi-field web forms rapidly, text inputs can occasionally drop characters due to browser lagging or page script latency, causing incomplete data submission.
+- When filling multi-field web forms rapidly, text inputs can occasionally drop characters due to browser lagging or page script latency, causing incomplete data submission.
 
 **Solution**
 
 - Utilized the Auto Verification (Verify Execution) feature natively for every single data input activity inside AddNewVendor.
-
-- By setting the verification mode to auto-detect text appearance, the robot automatically confirms that each piece of vendor data (ID, Name, Address, City, Country) is fully and correctly written into its respective field before proceeding to the next step.
+- By setting the verification mode to auto-detect text appearance, the robot automatically confirms that each piece of vendor data (ID, Name, Address, City, Country) is        fully and correctly written into its respective field before proceeding to the next step.
 
 **Challenge 3: Unstable Form Elements & Fields**
 - Web elements on the ACME form can have slight variations in attributes, making strict selectors prone to failing over time.
 
 **Solution**
 
--Leveraged Fuzzy Selectors combined with reliable text-based Anchors.
-
--Reduced reliance on absolute screen coordinates or raw Computer Vision.
+- Leveraged Fuzzy Selectors combined with reliable text-based Anchors.
+- Reduced reliance on absolute screen coordinates or raw Computer Vision.
 
 ### Example Selector Configuration:
 ```
 XML
+
 Target:
 <webctrl id='vendorTaxId' tag='INPUT' type='text' class='form-control' />
 
@@ -97,14 +96,23 @@ Anchor:
 ✔ Clear Workflow Annotations (Pre/Post Conditions).
 
 ## Screenshots
+
 ![Main Workflow](ScreenShots/MainWorkflow.png)
+
+
 
 ![Login To ACMES](ScreenShots/LoginToACMEWorkflow.png)
 
+
+
 ![Navigate To AddVendor](ScreenShots/NavigateToAddVendor.png)
+
+
 
 ![Add New Vendor Form](ScreenShots/AddNewVendor.png)
 
-Demo
-Simple link:
-(Watch the demo)[https://drive.google.com/file/d/1XKOMGH5yfN8OKgY27tmwwyI4rxFn0nTS/view?usp=sharing]# UiPath-Vendor-Onboarding-Automation
+
+
+## Demo
+- Simple link:
+(Watch the demo)[https://drive.google.com/file/d/1XKOMGH5yfN8OKgY27tmwwyI4rxFn0nTS/view?usp=sharing]
