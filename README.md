@@ -95,20 +95,23 @@ Anchor:
 
 ✔ Clear Workflow Annotations (Pre/Post Conditions).
 
-## Screenshots
+## Screenshots:
+
+### Main Workflow
 
 ![Main Workflow](ScreenShots/MainWorkflow.png)
 
-
+### Login To ACMES
 
 ![Login To ACMES](ScreenShots/LoginToACMEWorkflow.png)
 
 
+### Navigate To AddVendor
 
 ![Navigate To AddVendor](ScreenShots/NavigateToAddVendor.png)
 
 
-
+### Add New Vendor
 ![Add New Vendor Form](ScreenShots/AddNewVendor.png)
 
 
